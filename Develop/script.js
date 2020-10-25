@@ -66,10 +66,12 @@ function generatePassword(){
 
   //forloop to select a list of characters that are randomly choosen from the userChoice character prefereces and as long as passwordLength
   for (var i= 0; i < passwordLength; i++){
+    //Perform Math.random() by the length of userChoice
     var random = Math.floor(Math.random() * userChoice.length);
-    
+    //Assign randomPassword the string value of the randomly selected characters from userChoice
     randomPassword = randomPassword + userChoice.charAt(random);
   }
+  //Display random password
   return randomPassword;
 
 
